@@ -1,0 +1,23 @@
+# build output
+build/
+cmake-build-*/
+
+# compiled files
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.exe
+*.out
+
+# runtime files (write-ahead logs created while testing)
+*.wal
+*.log
+
+# editors
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
