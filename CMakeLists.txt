@@ -14,6 +14,7 @@ endif()
 add_library(vf_core
   src/distance.cpp
   src/vector_store.cpp
+  src/searcher.cpp
 )
 target_include_directories(vf_core PUBLIC include)
 target_compile_options(vf_core PRIVATE ${VF_WARNINGS})
@@ -30,6 +31,7 @@ enable_testing()
 add_executable(vf_tests
   tests/test_distance.cpp
   tests/test_vector_store.cpp
+  tests/test_search.cpp
 )
 target_link_libraries(vf_tests PRIVATE vf_core GTest::gtest_main)
 target_compile_options(vf_tests PRIVATE ${VF_WARNINGS})
